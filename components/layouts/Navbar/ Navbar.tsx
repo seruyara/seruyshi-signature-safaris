@@ -1,7 +1,16 @@
-export default function Navbar() {
-  return (
-    <nav>
+import React from 'react'
 
-    </nav>
-  );
+const  Navbar = () => {
+  return (
+    <div className='nav-container'>
+     <ul>
+      <li>Homepage</li>
+      <li>About Us</li>
+      <li>Destinations</li>
+      <li>Contact Us</li>
+     </ul>
+    </div>
+  )
 }
+
+export default  Navbar
