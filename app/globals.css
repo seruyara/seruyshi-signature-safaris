@@ -3,7 +3,16 @@ body {
  box-sizing: border-box;
   border: 2px solid red;
 }
+/*header/nav css*/
+.main-header{
+    border: 2px solid rgb(8, 7, 63);
+}
 
 .nav-container{
    border: 2px solid rgb(154, 215, 218);
+}
+
+/*Footer css*/
+.footer-box{
+  border: 2px solid rgb(212, 218, 154);
 }

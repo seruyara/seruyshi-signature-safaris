@@ -1,9 +1,9 @@
-import Navbar from "@/components/layouts/Navbar/ Navbar";
+import Header from "@/components/layouts/Header/Header";
 
 export default function Home() {
   return (
     <>
-    <Navbar/>
+    <Header/>
     <main>
       <h1>Seruyshi Signature Safaris</h1>
     </main>

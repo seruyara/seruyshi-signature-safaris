@@ -2,8 +2,10 @@ import React from 'react'
 
 const footer = () => {
   return (
-    <footer>
-      
+    <footer className='footer-box'>
+      <section>
+        
+      </section>
     </footer>
   )
 }
