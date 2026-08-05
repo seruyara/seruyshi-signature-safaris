@@ -9,7 +9,7 @@ const Header = () => {
           <a href="/">
             <img
               className="nav-logo"
-              src="images/SERUYSHI Main.png"
+              src="images/SERUYSHI BLACK.png"
               alt="logo"
             />
           </a>

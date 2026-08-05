@@ -4,8 +4,19 @@ body {
   border: 2px solid red;
 }
 /*header/nav css*/
-.main-header{
+.homepage-container {
     border: 2px solid rgb(8, 7, 63);
+    background-image: url("heros/zebras.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+}
+
+.main-header{
+    border: 2px solid rgb(35, 31, 240);
 }
 .nav-logo{
     border: 3px solid rgb(0, 255, 47); 
