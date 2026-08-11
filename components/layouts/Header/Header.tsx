@@ -9,13 +9,29 @@ const Header = () => {
           <a href="/">
             <img
               className="nav-logo"
-              src="images/SERUYSHI BLACK.png"
+              src="images/SERUYSHI Main.png"
               alt="logo"
             />
           </a>
         </div>
         <Navbar />
       </header>
+      <div className="homepage-content">
+          <div className="homepage-text">
+        <p className="subtitle">Experience Africa</p>
+
+        <h1 className="homepage-title">
+        Luxury Safaris 
+         <br />
+        Tailored for You
+        </h1>
+      </div>
+      <button className="safari-button">
+            Plan Your Safari
+       <span>→</span>
+      </button>
+      </div>
+     
     </div>
   )
 }
