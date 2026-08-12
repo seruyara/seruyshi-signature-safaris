@@ -1,0 +1,86 @@
+/* =========================
+   DESTINATIONS
+========================= */
+
+.destination-section {
+    width: 100%;
+    padding: 6rem 6%;
+}
+
+
+/* =========================
+   DESTINATION INFO
+========================= */
+
+.destination-info {
+    max-width: 700px;
+    margin-bottom: 3rem;
+}
+
+.destination-info h2 {
+    margin: 0;
+    font-size: clamp(3rem, 6vw, 5rem);
+    font-weight: 500;
+}
+
+.destination-info p {
+    margin-top: 1rem;
+}
+
+
+/* =========================
+   DESTINATION STATS
+========================= */
+
+.destination-stats {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.destination-stat {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+/* =========================
+   DESTINATION CARDS
+========================= */
+
+.destination-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.destination-card {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+}
+
+.destination-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* =========================
+   KENYA
+========================= */
+
+/* .kenya-destination {
+    Kenya-specific styles
+} */
+
+
+/* =========================
+   TANZANIA
+========================= */
+/* 
+.tanzania-destination {
+    Tanzania-specific styles
+} */

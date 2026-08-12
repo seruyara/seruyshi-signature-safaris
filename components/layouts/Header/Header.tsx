@@ -1,6 +1,5 @@
 import Navbar from "@/components/layouts/Navbar/ Navbar";
 
-
 const Header = () => {
   return (
      <div className="homepage-container">
@@ -23,12 +22,11 @@ const Header = () => {
         <h1 className="homepage-title">
         Luxury Safaris 
          <br />
-        Tailored for You
+        Tailored For You
         </h1>
       </div>
       <button className="safari-button">
             Plan Your Safari
-       <span>→</span>
       </button>
       </div>
      

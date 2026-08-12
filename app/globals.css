@@ -20,22 +20,21 @@ body {
     align-items:center;
     max-width:1400px;
     margin:0 auto;
-
     padding:1.5rem 4rem;
+    gap: 10rem;
+     /* border-bottom: 1px solid #c08552; */
      /* border: solid 3px rgb(219, 206, 19); */
-
 }
 
 .nav-logo{
-    width:270px;
+    width:280px;
     height:auto;
 }
 
 .nav-container{
-    margin-left:auto;
+    margin-left: 0;
     padding-top:6px;
     /* border: solid 3px rgb(102, 219, 19); */
-
 }
 
 .nav-container ul{
@@ -47,7 +46,7 @@ body {
 }
 
 .nav-container li{
-    color: #f4f2f1;
+    color: #ffffff;
     cursor: pointer;
     transition: all 0.3s ease;
     font-size: 1rem;
