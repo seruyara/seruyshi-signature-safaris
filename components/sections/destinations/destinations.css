@@ -1,10 +1,84 @@
 /* =========================
-   DESTINATIONS
+   DESTINATIONS SECTION
 ========================= */
 
 .destination-section {
     width: 100%;
     padding: 6rem 6%;
+    background-color: #f3e9dc;
+    color: #5e3023;
+}
+
+
+/* =========================
+   DESTINATION HEADER
+========================= */
+
+.destination-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.destination-heading h2 {
+    margin: 0;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.02rem;
+     color: #5e3023;
+}
+
+.destination-heading p {
+    margin-top: 0.8rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.18rem;
+    text-transform: uppercase;
+    color: #895737;
+}
+
+
+
+/* =========================
+   DESTINATION FILTER
+========================= */
+
+.destination-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+
+.destination-filter button {
+    padding: 0.5rem 0.9rem;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background: transparent;
+    color: #895737;
+    font-family: inherit;
+    font-size: 0.68rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition:
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.destination-filter button:hover {
+    color: #5e3023;
+    border-bottom: 1px solid #c08552;
+}
+
+.destination-filter button.active {
+    color: #5e3023;
+    border-bottom: 1px solid #5e3023;
 }
 
 
@@ -13,18 +87,24 @@
 ========================= */
 
 .destination-info {
-    max-width: 700px;
-    margin-bottom: 3rem;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    text-align: center;
 }
 
 .destination-info h2 {
     margin: 0;
-    font-size: clamp(3rem, 6vw, 5rem);
+    font-size: clamp(2rem, 5vw, 4rem);
     font-weight: 500;
+    line-height: 1;
 }
 
 .destination-info p {
-    margin-top: 1rem;
+    margin: 1rem auto 0;
+    max-width: 800px;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #895737;
 }
 
 
@@ -34,14 +114,59 @@
 
 .destination-stats {
     display: flex;
-    gap: 2rem;
-    margin-bottom: 4rem;
+    justify-content: center;
+    gap: 5rem;
+    margin: 4rem 0 5rem;
 }
 
 .destination-stat {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+    min-width: 150px;
+    text-align: center;
+}
+
+.destination-stat img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 1rem;
+    object-fit: contain;
+}
+
+.destination-stat h5 {
+    margin: 0;
+    font-size: 0.8rem;
+    letter-spacing: 0.12rem;
+    text-transform: uppercase;
+
+    font-weight: 600;
+}
+
+.destination-stat p {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    line-height: 1.5;
+
+    color: #895737;
+}
+
+
+.destination-locations-header {
+    margin-bottom: 2rem;
+}
+
+
+/* =========================
+   LOCATIONS HEADING
+========================= */
+
+.destination-locations {
+    margin-top: 2rem;
+}
+
+.destination-locations h3 {
+    margin-bottom: 2rem;
+
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 
 
@@ -52,19 +177,85 @@
 .destination-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+
+/* =========================
+   INDIVIDUAL CARD
+========================= */
 
 .destination-card {
     position: relative;
-    height: 350px;
+    height: 300px;
     overflow: hidden;
+    background-color: #ffffff;
+    border: 8px solid #ffffff;
+    box-shadow: 0 8px 25px rgba(94, 48, 35, 0.12);
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
+
+
+/* =========================
+   CARD IMAGE
+========================= */
 
 .destination-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+
+
+/* =========================
+   CARD OVERLAY
+========================= */
+
+.destination-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.65),
+        transparent 60%
+    );
+}
+
+
+/* =========================
+   CARD TITLE
+========================= */
+
+.destination-card p {
+    position: absolute;
+    z-index: 2;
+    left: 1.5rem;
+    bottom: 1.5rem;
+    margin: 0;
+    color: white;
+    font-size: 1.10rem;
+    font-weight: 500;
+    letter-spacing: 0.03rem;
+}
+
+
+/* =========================
+   CARD HOVER
+========================= */
+
+.destination-card:hover img {
+    transform: scale(1.06);
+}
+
+.destination-card:hover img {
+    transform: scale(1.05);
 }
 
 
@@ -72,15 +263,54 @@
    KENYA
 ========================= */
 
-/* .kenya-destination {
-    Kenya-specific styles
-} */
+/* Kenya-specific styles */
 
 
 /* =========================
    TANZANIA
 ========================= */
-/* 
-.tanzania-destination {
-    Tanzania-specific styles
-} */
+
+/* Tanzania-specific styles */
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .destination-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .destination-stats {
+        gap: 2rem;
+    }
+
+    .destination-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .destination-section {
+        padding: 4rem 5%;
+    }
+
+    .destination-stats {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .destination-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .destination-card {
+        height: 300px;
+    }
+}
