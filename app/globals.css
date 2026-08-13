@@ -27,7 +27,7 @@ body {
 }
 
 .nav-logo{
-    width:280px;
+    width:350px;
     height:auto;
 }
 
@@ -73,9 +73,9 @@ body {
     width: 100%;
 }
 
-/* .nav-container li:hover {
+.nav-container li:hover {
     color: #c08552;
-} */
+}
 
 
 
@@ -139,4 +139,99 @@ body {
 /*Footer css*/
 .footer-box{
   border: 2px solid rgb(61, 56, 69);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    position: relative;
+
+    width: 92%;
+    max-width: 1400px;
+
+    min-height: 360px;
+
+    margin: 5rem auto 2rem;
+
+    background-image:
+        linear-gradient(
+            rgba(25, 30, 22, 0.45),
+            rgba(25, 30, 22, 0.55)
+        ),
+        url("/images/sunset-safari.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: #F3E9DC;
+
+    overflow: hidden;
+}
+
+.footer-content {
+    position: relative;
+    min-height: 360px;
+    padding: 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+.footer h3 {
+    margin-bottom: 1rem;
+
+    font-size: 0.7rem;
+    font-weight: 500;
+
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+}
+
+.footer p,
+.footer a {
+    font-size: 0.75rem;
+    line-height: 1.7;
+    color: rgba(243, 233, 220, 0.8);
+}
+
+.footer-logo {
+    width: 150px;
+    height: auto;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 1rem;
+
+    margin-top: 1.2rem;
+}
+
+.footer-socials a {
+    font-size: 0.9rem;
+
+    color: #F3E9DC;
+
+    transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+    color: #D5B27A;
+}
+
+.footer-bottom {
+    padding-top: 1rem;
+
+    border-top: 1px solid rgba(243, 233, 220, 0.3);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
