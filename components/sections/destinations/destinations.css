@@ -28,7 +28,7 @@
     font-weight: 500;
     line-height: 1;
     letter-spacing: 0.02rem;
-     color: #5e3023;
+    color: #5E3023;
 }
 
 .destination-heading p {
@@ -36,7 +36,7 @@
     font-size: 0.75rem;
     letter-spacing: 0.18rem;
     text-transform: uppercase;
-    color: #895737;
+    color: #66745A;
 }
 
 
@@ -97,6 +97,7 @@
     font-size: clamp(2rem, 5vw, 4rem);
     font-weight: 500;
     line-height: 1;
+    color: #66745A;
 }
 
 .destination-info p {
@@ -104,7 +105,7 @@
     max-width: 800px;
     font-size: 1rem;
     line-height: 1.8;
-    color: #895737;
+     color: #5E3023;
 }
 
 
@@ -120,15 +121,18 @@
 }
 
 .destination-stat {
-    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 180px;
     text-align: center;
 }
 
-.destination-stat img {
-    width: 45px;
-    height: 45px;
+.destination-stat-icon {
+    width: 1.5rem;
+    height: 1.9rem;
+    color: #5e3023;
     margin-bottom: 1rem;
-    object-fit: contain;
 }
 
 .destination-stat h5 {
@@ -136,7 +140,7 @@
     font-size: 0.8rem;
     letter-spacing: 0.12rem;
     text-transform: uppercase;
-
+    color: #66745A;
     font-weight: 600;
 }
 
@@ -242,7 +246,9 @@
     color: white;
     font-size: 1.10rem;
     font-weight: 500;
-    letter-spacing: 0.03rem;
+    /* letter-spacing: 0.03rem; */
+    font-size: 0.90rem;
+    letter-spacing: 0.10rem;
 }
 
 

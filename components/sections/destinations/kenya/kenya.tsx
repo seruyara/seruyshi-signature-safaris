@@ -1,3 +1,7 @@
+import Icon from "@/components/ui/icons";
+import { faLocationDot,faPersonHiking } from "@fortawesome/free-solid-svg-icons";
+
+
 const Kenya = () => {
   return (
     <section className="kenya-destination">
@@ -49,22 +53,27 @@ const Kenya = () => {
 
       <div className="destination-stats">
         <div className="destination-stat">
-          <img src="" alt="" />
+          <Icon
+               icon={faLocationDot}
+               className="destination-stat-icon"
+          />
           <h5>Places to Visit</h5>
           <p>6 Locations</p>
         </div>
 
         <div className="destination-stat">
-          <img src="" alt="" />
+           <Icon
+               icon={faPersonHiking}
+               className="destination-stat-icon"
+            />
           <h5>Experiences</h5>
           <p>Safari, City Tours & More</p>
         </div>
 
-        <div className="destination-stat">
-          <img src="" alt="" />
+        {/* <div className="destination-stat">
           <h5>Included In</h5>
           <p>Classic Kenyan Safari</p>
-        </div>
+        </div> */}
 
       </div>
 
